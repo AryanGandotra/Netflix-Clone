@@ -1,0 +1,397 @@
+:root {
+    --primary-color: #e50914;
+    --light-color: #fa2530;
+    --secondary-color: #c4050f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: rgb(34, 34, 34);
+    color: #999;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5 rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.showcase {
+    width: 100%;
+    height: 98vh;
+    position: relative;
+    background-image: url(background.jpg);
+
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(0, 0, 0, 0.6);
+    box-shadow: inset 0px 100px 200px black;
+}
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+
+.showcase-top img {
+    width: 170px;
+    position: absolute;
+    top: 25%;
+    left: 3.5%;
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 33%;
+    right: 5%;
+}
+
+.showcase-top select {
+    position: absolute;
+    top: 33%;
+    right: 12%;
+}
+
+
+.language {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+.submit-container {
+    height: 4rem;
+    width: 50rem;
+    background: white;
+    display: flex;
+    border-radius: 3px;
+}
+
+.mail {
+    height: 4rem;
+    width: 35rem;
+    padding-left: 1em;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.submit {
+    height: 4rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    font-size: 26px;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+
+.showcase-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+    z-index: 2;
+}
+
+.showcase-content h1 {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+.showcase-content p {
+    font-size: 26px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.showcase-content .content {
+    font-size: 19.2px;
+    color: white;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    padding: 70px 200px;
+    align-items: center;
+    margin-top: 6px;
+    background: black;
+}
+
+.text h1 {
+    font-size: 3.125rem;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.text p {
+    font-size: 1.625rem;
+    color: white;
+}
+
+.media {
+    position: relative;
+}
+
+.media.s1 img {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.media.s1 video {
+    width: 356px;
+    position: absolute;
+    top: 88px;
+    left: 70px;
+    z-index: 1;
+}
+
+.download {
+    border: 2px solid gray;
+    background: black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    width: 290px;
+    height: 95px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 18px;
+    left: 7.5rem;
+}
+
+.download span {
+    color: white;
+}
+
+.download img {
+    height: 75px;
+    width: auto;
+}
+
+.media.s3 img {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.media.s3 video {
+    width: 300px;
+    position: absolute;
+    top: 43px;
+    left: 96px;
+    z-index: 1;
+}
+
+section:nth-child(odd) div.text {
+    order: 2;
+}
+
+div.faq {
+    padding: 70px 30px;
+    color: #fff;
+    background: black;
+    margin-top: 6px;
+}
+
+div.faq h1 {
+    font-size: 3.125rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+div.questions {
+    max-width: 850px;
+    margin: 0px auto;
+    font-size: 1.625rem;
+}
+
+div.question {
+    position: relative;
+    background-color: #303030;
+    margin-bottom: 5px;
+}
+
+div.question svg {
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+
+}
+
+div.question .header {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+div.question div.answer {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+div.question input[type="checkbox"] {
+    display: none;
+}
+
+div.question input[type="checkbox"]:checked~div.answer {
+    padding: 30px 30px;
+    max-height: 600px;
+}
+
+div.question input[type="checkbox"]:checked~.header svg {
+    transform: rotate(0deg);
+}
+
+.footer-mail {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    z-index: 2;
+}
+
+.footer-content {
+    font-size: 19.2px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    color: #737373;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    margin-top: 6px;
+    padding: 4rem 20rem;
+}
+
+footer h4 {
+    font-size: 16px;
+    font-weight: 100;
+    color: #737373;
+    margin-bottom: 1rem;
+}
+
+footer h6 {
+    font-size: 12px;
+    font-weight: 100;
+    color: #737373;
+    margin-bottom: 1rem;
+}
+
+.list-container {
+    display: flex;
+    padding: 20px 0;
+}
+
+footer ul {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 6rem;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+}
+
+.language-2 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #737373;
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+    width: 130px;
+    height: 50px;
+    margin-bottom: 1rem;
+    border-radius: 1px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+}
+
+.submit:hover {
+    background: var(--light-color);
+}
