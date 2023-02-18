@@ -4,3 +4,7 @@ Netflix landing page clone, made using HTML and CSS! Our clone is designed to gi
 <img src="images/1.png">
 <img src="images/2.png">
 <img src="images/3.png">
+<img src="images/4.png">
+<img src="images/5.png">
+<img src="images/6.png">
+
